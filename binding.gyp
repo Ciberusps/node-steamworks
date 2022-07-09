@@ -35,7 +35,7 @@
       'conditions': [
         ['target_arch=="ia32"', {
           'variables': {
-            'project_name': 'greenworks-osx32',
+            'project_name': 'greenworks-osx',
           },
         }],
         ['target_arch=="x64"', {
@@ -43,10 +43,20 @@
             'project_name': 'greenworks-osx64',
           },
         }],
+        ['target_arch=="arm64"', {
+          'variables': {
+            'project_name': 'greenworks-osx',
+          },
+        }],
+        ['target_arch=="universal"', {
+          'variables': {
+            'project_name': 'greenworks-osx',
+          },
+        }],
       ],
       'variables': {
-        'redist_bin_dir': 'osx32',
-        'public_lib_dir': 'osx32',
+        'redist_bin_dir': 'osx',
+        'public_lib_dir': 'osx',
         'lib_steam': 'libsteam_api.dylib',
         'lib_encryptedappticket': 'libsdkencryptedappticket.dylib',
       },
