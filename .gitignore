@@ -13,3 +13,6 @@ steam_appid.txt
 *.node
 .DS_Store
 npm-debug.log
+
+# was not tracked by git in original repo - easier to manully ignore
+package-lock.json
