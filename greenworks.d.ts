@@ -19,6 +19,7 @@ declare module "greenworks" {
       buffer?: any,
       buffer_size?: any
     ) => string;
+    getCurrentGameLanguage: () => string;
   };
 
   export default greenworks;
