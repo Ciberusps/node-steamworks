@@ -1,9 +1,10 @@
 declare module "greenworks" {
+  type TDefaultErrorCallback = (error: any) => void;
+
   type TGetCloudQuotaSuccessCallback = (
     total_bytes: number,
     available_bytes: number
   ) => void;
-  type TDefaultErrorCallback = (error: any) => void;
 
   const greenworks: {
     init: () => boolean;
@@ -20,6 +21,7 @@ declare module "greenworks" {
       buffer_size?: any
     ) => string;
     getCurrentGameLanguage: () => string;
+    getCurrentUILanguage: () => string;
   };
 
   export default greenworks;
