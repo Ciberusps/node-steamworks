@@ -35,7 +35,7 @@
       'conditions': [
         ['target_arch=="ia32"', {
           'variables': {
-            'project_name': 'greenworks-osx',
+            'project_name': 'greenworks-osx32',
           },
         }],
         ['target_arch=="x64"', {
